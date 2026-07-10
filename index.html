@@ -49,6 +49,11 @@
   .back-link{font-family:var(--mono);font-size:.78rem;color:var(--muted);display:flex;align-items:center;gap:6px;transition:color .2s}
   .back-link:hover{color:var(--accent)}
   .nav-ctrls{display:flex;gap:10px;align-items:center}
+  .toolnav-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:14px 28px;
+    font-family:var(--mono);font-size:.8rem;border-bottom:1px solid var(--hair)}
+  .toolnav-row a{color:var(--muted);transition:color .2s}
+  .toolnav-row a:hover{color:var(--accent)}
+  .toolnav-row .sep{color:var(--hair);user-select:none}
   .ctrl{font-family:var(--mono);font-size:.74rem;border:1px solid var(--hair);background:transparent;
     color:var(--muted);border-radius:8px;padding:6px 9px;cursor:pointer;transition:all .2s;line-height:1}
   .ctrl:hover{border-color:var(--accent);color:var(--ink)}
@@ -129,6 +134,18 @@
       </div>
     </div>
   </header>
+
+  <nav class="toolnav-row" id="toolnav">
+    <a href="https://islaimpresa.github.io/">← Isla Impresa</a>
+    <span class="sep">•</span>
+    <a href="https://islaimpresa.github.io/FDMCalculator/" target="_blank" rel="noopener" data-i18n="navFdm">FDM Calculator</a>
+    <span class="sep">•</span>
+    <a href="https://islaimpresa.github.io/SLACalculator/" target="_blank" rel="noopener" data-i18n="navResin">Resin Calculator</a>
+    <span class="sep">•</span>
+    <a href="https://islaimpresa.github.io/FilamentTracker/" target="_blank" rel="noopener" data-i18n="navTracker">Filament Tracker</a>
+    <span class="sep">•</span>
+    <a href="https://islaimpresa.github.io/ResinTracker/" target="_blank" rel="noopener" data-i18n="navRTracker">Resin Tracker</a>
+  </nav>
 
   <section class="intro">
     <div class="wrap">
@@ -396,7 +413,8 @@
       volumeHint:"For resin dosing and print-volume checks.",
       unitMm3:"Cubic millimeters",unitCm3:"Cubic centimeters",unitIn3:"Cubic inches",
       footHint:"Saved to your device. No account, no upload.",
-      foot:"© Isla Impresa · 3D Printing & Custom Design · Ponce, Puerto Rico"
+      foot:"© Isla Impresa · 3D Printing & Custom Design · Ponce, Puerto Rico",
+      navFdm:"FDM Calculator",navResin:"Resin Calculator",navTracker:"Filament Tracker",navRTracker:"Resin Tracker"
     },
     es:{
       backLink:"← Herramientas",backLink2:"← Volver a todas las herramientas",
@@ -414,7 +432,8 @@
       volumeHint:"Para dosificar resina y revisar el volumen de impresión.",
       unitMm3:"Milímetros cúbicos",unitCm3:"Centímetros cúbicos",unitIn3:"Pulgadas cúbicas",
       footHint:"Guardado en tu dispositivo. Sin cuenta, sin subir nada.",
-      foot:"© Isla Impresa · Impresión 3D y Diseño Personalizado · Ponce, Puerto Rico"
+      foot:"© Isla Impresa · Impresión 3D y Diseño Personalizado · Ponce, Puerto Rico",
+      navFdm:"Calculadora FDM",navResin:"Calculadora de Resina",navTracker:"Rastreador de Filamento",navRTracker:"Rastreador de Resina"
     }
   };
   let lang="en";
