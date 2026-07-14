@@ -116,6 +116,7 @@
   .social a:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
   @media print { .topbar,.toolnav,.copybtn,#tabs{display:none!important} }
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Unit & Scale Converter", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Web browser", "url": "https://islaimpresa.github.io/UnitConverter/", "description": "Free unit converter for makers: length, 3D-print scale percentage, and volume.", "inLanguage": ["en", "es"], "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "author": {"@type": "Organization", "name": "Isla Impresa", "url": "https://islaimpresa.github.io/", "sameAs": ["https://www.instagram.com/islaimpresa/", "https://www.facebook.com/Islaimpresa/"], "@context": "https://schema.org"}}</script>
 </head>
 <body>
 <div class="wrap">
@@ -140,6 +141,10 @@
     <a href="https://islaimpresa.github.io/FilamentTracker/" id="navTracker">Filament Tracker</a>
     <span class="sep">•</span>
     <a href="https://islaimpresa.github.io/ResinTracker/" id="navRTracker">Resin Tracker</a>
+    <span class="sep">•</span>
+    <a href="https://islaimpresa.github.io/Troubleshooter/" id="navTrouble">Troubleshooter</a>
+    <span class="sep">•</span>
+    <a href="https://islaimpresa.github.io/MaterialSelector/" id="navMaterial">Material Selector</a>
   </div>
   <p class="sub"><b id="slogan">Technical Mastery. Creative Design. Made in Puerto Rico.</b><br><span id="subtext">Convert length, scale a model to a target size, and convert volume — all in one place.</span></p>
 
@@ -374,7 +379,7 @@
       unitMm3:"Cubic millimeters", unitCm3:"Cubic centimeters", unitIn3:"Cubic inches",
       footHint:"Saved to your device. No account, no upload.",
       foot:"© Isla Impresa · 3D Printing & Custom Design · Ponce, Puerto Rico",
-      navFdm:"FDM Calculator", navResin:"Resin Calculator", navTracker:"Filament Tracker", navRTracker:"Resin Tracker"
+      navFdm:"FDM Calculator", navResin:"Resin Calculator", navTracker:"Filament Tracker", navRTracker:"Resin Tracker", navTrouble:"Troubleshooter", navMaterial:"Material Selector"
     },
     es:{
       tagline:"// conversor de unidades y escala",
@@ -393,7 +398,7 @@
       unitMm3:"Milímetros cúbicos", unitCm3:"Centímetros cúbicos", unitIn3:"Pulgadas cúbicas",
       footHint:"Guardado en tu dispositivo. Sin cuenta, sin subir nada.",
       foot:"© Isla Impresa · Impresión 3D y Diseño Personalizado · Ponce, Puerto Rico",
-      navFdm:"Calculadora FDM", navResin:"Calculadora de Resina", navTracker:"Rastreador de Filamento", navRTracker:"Rastreador de Resina"
+      navFdm:"Calculadora FDM", navResin:"Calculadora de Resina", navTracker:"Rastreador de Filamento", navRTracker:"Rastreador de Resina", navTrouble:"Diagnóstico", navMaterial:"Selector de Material"
     }
   };
   let lang="en";
@@ -446,6 +451,8 @@
     g("navResin").textContent=t("navResin");
     g("navTracker").textContent=t("navTracker");
     g("navRTracker").textContent=t("navRTracker");
+    g("navTrouble").textContent=t("navTrouble");
+    g("navMaterial").textContent=t("navMaterial");
     const dark=document.documentElement.getAttribute("data-theme")==="dark";
     g("themeBtn").textContent=dark?t("themeLight"):t("themeDark");
   }
