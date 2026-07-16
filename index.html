@@ -145,6 +145,12 @@
     <a href="https://islaimpresa.github.io/Troubleshooter/" id="navTrouble">Troubleshooter</a>
     <span class="sep">•</span>
     <a href="https://islaimpresa.github.io/MaterialSelector/" id="navMaterial">Material Selector</a>
+    <span class="sep">•</span>
+    <a href="https://islaimpresa.github.io/DryingGuide/" id="navDrying">Drying Guide</a>
+    <span class="sep">•</span>
+    <a href="https://islaimpresa.github.io/ToleranceCalculator/" id="navTolerance">Tolerance Calculator</a>
+    <span class="sep">•</span>
+    <a href="https://islaimpresa.github.io/LithophaneMaker/" id="navLitho">Lithophane Maker</a>
   </div>
   <p class="sub"><b id="slogan">Technical Mastery. Creative Design. Made in Puerto Rico.</b><br><span id="subtext">Convert length, scale a model to a target size, and convert volume — all in one place.</span></p>
 
@@ -379,7 +385,7 @@
       unitMm3:"Cubic millimeters", unitCm3:"Cubic centimeters", unitIn3:"Cubic inches",
       footHint:"Saved to your device. No account, no upload.",
       foot:"© Isla Impresa · 3D Printing & Custom Design · Ponce, Puerto Rico",
-      navFdm:"FDM Calculator", navResin:"Resin Calculator", navTracker:"Filament Tracker", navRTracker:"Resin Tracker", navTrouble:"Troubleshooter", navMaterial:"Material Selector"
+      navFdm:"FDM Calculator", navResin:"Resin Calculator", navTracker:"Filament Tracker", navRTracker:"Resin Tracker", navTrouble:"Troubleshooter", navMaterial:"Material Selector", navDrying:"Drying Guide", navTolerance:"Tolerance Calculator", navLitho:"Lithophane Maker"
     },
     es:{
       tagline:"// conversor de unidades y escala",
@@ -398,7 +404,7 @@
       unitMm3:"Milímetros cúbicos", unitCm3:"Centímetros cúbicos", unitIn3:"Pulgadas cúbicas",
       footHint:"Guardado en tu dispositivo. Sin cuenta, sin subir nada.",
       foot:"© Isla Impresa · Impresión 3D y Diseño Personalizado · Ponce, Puerto Rico",
-      navFdm:"Calculadora FDM", navResin:"Calculadora de Resina", navTracker:"Rastreador de Filamento", navRTracker:"Rastreador de Resina", navTrouble:"Diagnóstico", navMaterial:"Selector de Material"
+      navFdm:"Calculadora FDM", navResin:"Calculadora de Resina", navTracker:"Rastreador de Filamento", navRTracker:"Rastreador de Resina", navTrouble:"Diagnóstico", navMaterial:"Selector de Material", navDrying:"Guía de Secado", navTolerance:"Calculadora de Tolerancias", navLitho:"Creador de Lithophanes"
     }
   };
   let lang="en";
@@ -453,6 +459,9 @@
     g("navRTracker").textContent=t("navRTracker");
     g("navTrouble").textContent=t("navTrouble");
     g("navMaterial").textContent=t("navMaterial");
+    g("navDrying").textContent=t("navDrying");
+    g("navTolerance").textContent=t("navTolerance");
+    g("navLitho").textContent=t("navLitho");
     const dark=document.documentElement.getAttribute("data-theme")==="dark";
     g("themeBtn").textContent=dark?t("themeLight"):t("themeDark");
   }
